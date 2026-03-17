@@ -1,8 +1,8 @@
 [build-system]
 build-backend = "setuptools.build_meta"
 requires = [
-  "setuptools@git+https://github.com/ngoldbaum/setuptools@abi3.abi3t",
-  "packaging@git+https://github.com/ngoldbaum/packaging@abi3.abi3t",
+  "setuptools@git+https://github.com/ngoldbaum/setuptools@abi3t",
+  "packaging@git+https://github.com/ngoldbaum/packaging@abi3t",
   "cython@git+https://github.com/cython/cython@freethreading-limited-api-preview",
 ]
 

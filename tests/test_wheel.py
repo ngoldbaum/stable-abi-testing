@@ -83,7 +83,7 @@ def test_install(test_case: str, tmp_path: Path, subtests) -> None:
             # The setuptools fork doesn't yet have support for forcing a GIL-enabled build
             # to produce an abi3.abi3t wheel
             if IS_FREETHREADING:
-                assert "abi3.abi3t" in path_name
+                assert "abi3t" in path_name
             else:
                 assert "abi3" in path_name and "abi3t" not in path_name
         else:
@@ -91,7 +91,7 @@ def test_install(test_case: str, tmp_path: Path, subtests) -> None:
                 build_system != "meson-python",
                 reason="Only meson-python and setuptools forks build abi3.abi3t",
             ):
-                assert "abi3.abi3t" in path_name
+                assert "abi3t" in path_name
 
     subprocess.run([sys.executable, "-m", "venv", tmp_path / "venv"], check=True)
     python_exe = "python.exe" if os.name == "nt" else "python"

@@ -1,10 +1,10 @@
 [dependency-groups]
 backends = [
   "maturin",
-  "meson-python @ git+https://github.com/mgorny/meson-python@freethreading-limited-api",
+  "meson-python @ git+https://github.com/ngoldbaum/meson-python@abi3t",
   "scikit-build-core",
-  "setuptools @ git+https://github.com/ngoldbaum/setuptools@abi3.abi3t",
-  "packaging @ git+https://github.com/ngoldbaum/packaging@abi3.abi3t",
+  "setuptools @ git+https://github.com/ngoldbaum/setuptools@abi3t",
+  "packaging @ git+https://github.com/ngoldbaum/packaging@abi3t",
   "cffi @ git+https://github.com/ngoldbaum/cffi@abi3t.abi3",
 ]
 build-tools = [
@@ -14,7 +14,7 @@ build-tools = [
 ]
 test = [
   "build",
-  "pip @ git+https://github.com/mgorny/pip@freethreading-limited-api",
+  "pip @ git+https://github.com/ngoldbaum/pip@abi3t",
   "pytest >= 9.0",
   "pytest-xdist",
   "ninja",  # needed by meson
